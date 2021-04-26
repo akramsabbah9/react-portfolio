@@ -12,7 +12,7 @@ function Nav(props) {
                     <li
                         key={section.name}
                     >
-                        <span onClick={() => setCurrent(section)}>{section.title}</span>
+                        <span onClick={() => setCurrent(section)}>{section.name}</span>
                     </li>
                 ))}
             </ul>
