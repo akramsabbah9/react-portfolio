@@ -1,14 +1,21 @@
 /* Nav: list all section names and change current section when one is clicked. */
 import React from "react";
 
-function Nav() {
+function Nav(props) {
+    const {sections = [], current, setCurrent} = props;
+
     return (
         <nav>
-            <ul>
-                <li>About Me</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
-                <li>Resume</li>
+            <ul>{/*TODO: flex*/}
+                {sections.map((section) => (
+                    // make a list element with an onClick listener to change the current section
+                    <li
+                        key={section.name}
+                        onClick={setCurrent(section)}
+                    >
+                        {section.title}
+                    </li>
+                ))}
             </ul>
         </nav>
     );

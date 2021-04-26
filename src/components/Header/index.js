@@ -2,11 +2,11 @@
 import React from "react";
 import Nav from "../Nav";
 
-function Header() {
+function Header({ sections, current, setCurrent }) {
     return (
-        <header>
+        <header>{/*TODO: flex*/}
             <h2><a href="/">Akram Sabbah</a></h2>
-            <Nav />
+            <Nav sections={sections} current={current} setCurrent={setCurrent} />
         </header>
     );
 }
