@@ -34,6 +34,7 @@ function App() {
                 setCurrent={setCurrentSection}
             />
             <main>
+                <h1>{currentSection.title}</h1>
                 {renderCurrent(currentSection.name)}
             </main>
             <Footer />
