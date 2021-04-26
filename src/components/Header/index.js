@@ -5,7 +5,7 @@ import Nav from "../Nav";
 function Header() {
     return (
         <header>
-            <h1><a href="/">Akram Sabbah</a></h1>
+            <h2><a href="/">Akram Sabbah</a></h2>
             <Nav />
         </header>
     );
