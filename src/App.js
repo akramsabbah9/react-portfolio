@@ -15,6 +15,12 @@ function App() {
         {name: "Resume", title: "Resume"}
     ]);
     const [currentSection, setCurrentSection] = useState(sections[0]);
+    
+    const renderCurrent = name => {
+        return (name === "Portfolio") ? <Portfolio /> :
+        (name === "Contact") ? <Contact /> :
+        (name === "Resume") ? <Resume /> : <About />;
+    };
 
     return (
         <>
@@ -24,10 +30,9 @@ function App() {
                 setCurrent={setCurrentSection}
             />
             <main>
-                {/* TODO: change page state based on info from Nav in Header */}
-                <About />
+                {renderCurrent(currentSection.name)}
             </main>
-            <Footer></Footer>
+            <Footer />
         </>
     );
 }

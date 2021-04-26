@@ -7,13 +7,12 @@ function Nav(props) {
     return (
         <nav>
             <ul>{/*TODO: flex*/}
-                {sections.map((section) => (
+                {sections.map(section => (
                     // make a list element with an onClick listener to change the current section
                     <li
                         key={section.name}
-                        onClick={setCurrent(section)}
                     >
-                        {section.title}
+                        <span onClick={() => setCurrent(section)}>{section.title}</span>
                     </li>
                 ))}
             </ul>
