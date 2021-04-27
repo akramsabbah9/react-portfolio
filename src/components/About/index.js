@@ -4,7 +4,7 @@ import React from "react";
 function About() {
     return (
         <div>{/*TODO: flex*/}
-            <img src={require("../../assets/me.jpg").default} alt="Akram Sabbah" />
+            <img src={require("../../assets/img/me.jpg").default} alt="Akram Sabbah" />
             <div>{/*TODO: no flex*/}
                 <h2>Who Am I?</h2>
                 <p>
