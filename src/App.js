@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import About from "./components/About";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
-import Resume from "./components/Resume";
+import Container from "react-bootstrap/Container";
+import { Header, Footer, About, Portfolio, Contact, Resume } from "./components";
 import "./App.css";
 
 function App() {
@@ -34,10 +30,14 @@ function App() {
                 current={currentSection}
                 setCurrent={setCurrentSection}
             />
-            <main>
-                <h1>{currentSection.title}</h1>
-                {renderCurrent(currentSection.name)}
-            </main>
+
+            <Container fluid>
+                <main>
+                    <h1>{currentSection.title}</h1>
+                    {renderCurrent(currentSection.name)}
+                </main>
+            </Container>
+
             <Footer />
         </>
     );
