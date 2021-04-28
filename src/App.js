@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-// import "bootswatch/dist/[theme]/bootstrap.min.css"; // TODO: replace theme with another thing
-import "bootstrap/dist/css/bootstrap.min.css"; //TODO: comment this out when using bootswatch
+import "bootswatch/dist/slate/bootstrap.min.css"; // theme: slate
+// import "bootstrap/dist/css/bootstrap.min.css"; // comment this out when using bootswatch
 import Container from "react-bootstrap/Container";
 import { Header, Footer, About, Portfolio, Contact, Resume } from "./components";
 import "./App.css";
@@ -33,8 +33,10 @@ function App() {
             />
 
             <Container fluid>
-                <main>
-                    <h1>{currentSection.title}</h1>
+                <main className="justify-content-center">
+                    <h1 className="text-center mb-4">
+                        <span className="border-bottom rounded pl-3 pr-3 pt-1 pb-1">{currentSection.title}</span>
+                    </h1>
                     {renderCurrent(currentSection.name)}
                 </main>
             </Container>

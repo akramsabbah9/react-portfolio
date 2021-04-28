@@ -24,3 +24,7 @@ code {
 .nav-item span:hover {
     font-weight: 700;
 }
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+}
