@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootswatch/dist/[theme]/bootstrap.min.css"; // TODO: replace theme with another thing
+import "bootstrap/dist/css/bootstrap.min.css"; //TODO: comment this out when using bootswatch
 import Container from "react-bootstrap/Container";
 import { Header, Footer, About, Portfolio, Contact, Resume } from "./components";
 import "./App.css";
