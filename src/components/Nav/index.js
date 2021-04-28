@@ -1,23 +1,19 @@
 /* Nav: list all section names and change current section when one is clicked. */
 import React from "react";
+import Nav from "react-bootstrap/Nav";
 
-function Nav(props) {
+function MNav(props) {
     const {sections = [], current, setCurrent} = props;
 
     return (
-        <nav>
-            <ul>{/*TODO: flex*/}
-                {sections.map(section => (
-                    // make a list element with an onClick listener to change the current section
-                    <li
-                        key={section.name}
-                    >
-                        <span onClick={() => setCurrent(section)}>{section.name}</span>
-                    </li>
-                ))}
-            </ul>
-        </nav>
+        <Nav className="w-75 ml-auto justify-content-around">
+            {sections.map(section => (
+                <Nav.Item key={section.name}>
+                    <span onClick={() => setCurrent(section)}>{section.name}</span>
+                </Nav.Item>
+            ))}
+        </Nav>
     );
 }
 
-export default Nav;
+export default MNav;

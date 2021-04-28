@@ -5,16 +5,17 @@
     --light: #fafafa;
     --dark: #000000;
     --error: red;
+    font-size: 20px;
 
 }
 
-* {
+/* * {
     box-sizing: border-box;
 }
 
 html, body {
     min-height: 100%;
-}
+} */
 
 body {
     margin: 0;
