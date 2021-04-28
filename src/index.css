@@ -1,21 +1,11 @@
 :root {
-    --primary: #00468b;
-    /* --secondary: #F3A847; */
-    /* --tertiary: #B12704; */
-    --light: #fafafa;
-    --dark: #000000;
-    --error: red;
-    font-size: 20px;
+    font-size: 25px;
 
-}
-
-/* * {
-    box-sizing: border-box;
 }
 
 html, body {
-    min-height: 100%;
-} */
+    min-height: 100;
+}
 
 body {
     margin: 0;
@@ -29,4 +19,8 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
+}
+
+.nav-item span:hover {
+    font-weight: bolder;
 }
