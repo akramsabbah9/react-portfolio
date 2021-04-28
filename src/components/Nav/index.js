@@ -6,7 +6,7 @@ function MNav(props) {
     const {sections = [], current, setCurrent} = props;
 
     return (
-        <Nav className="w-75 ml-auto justify-content-around text-white row">
+        <Nav className="w-100 justify-content-around text-white col-lg-9 row">
             {sections.map(section => (
                 <Nav.Item key={section.name} className="col-sm text-center">
                     <span onClick={() => setCurrent(section)}>{section.name}</span>
