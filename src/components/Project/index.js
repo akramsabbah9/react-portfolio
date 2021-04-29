@@ -4,9 +4,9 @@ import React from "react";
 function Project(props) {
     const { num, name, github, deployed } = props;
     return (
-        <article className="card m-1">
+        <article className="card m-2">
             <div className="card-header h-100">
-                <h6 className="text-white">{name}</h6>
+                <h6 className="card-title text-white">{name}</h6>
                 <div className="d-flex justify-content-center align-items-center">
                     <img
                         key={num}
