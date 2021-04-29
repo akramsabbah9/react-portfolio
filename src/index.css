@@ -1,10 +1,9 @@
 :root {
-    font-size: 25px;
-
+    font-size: 20px;
 }
 
 html, body {
-    min-height: 100;
+    min-height: 100%;
 }
 
 body {
@@ -21,12 +20,24 @@ code {
         monospace;
 }
 
+/* Set header+main combo to be a certain amount minus footer, with overflow visible  */
+.top-content {
+    min-height: calc(100vh - 76px); /* footer height is currently 36px + 20px top & bottom margins*/
+    overflow: visible;
+}
+
 .nav-item span:hover {
     font-weight: 700;
 }
 
 h1 {
     font-family: "Times New Roman", Times, serif;
+}
+
+.my-img {
+    /* max-height: 386px; */
+    max-height: 53.7vh;
+    width: auto;
 }
 
 svg {

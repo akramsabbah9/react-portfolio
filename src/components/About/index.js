@@ -10,7 +10,7 @@ function About() {
             <Col className="d-flex justify-content-center" md="6">
                 <Image
                     src={require("../../assets/img/me.jpg").default}
-                    className="h-75 mt-3"
+                    className="mt-3 mb-2 my-img"
                     alt="Akram Sabbah"
                     rounded fluid
                 />

@@ -26,13 +26,14 @@ function App() {
 
     return (
         <>
+            <div className="top-content">
             <Header
                 sections={sections}
                 current={currentSection}
                 setCurrent={setCurrentSection}
             />
 
-            <Container fluid>
+            <Container className="pl-3 pr-3" fluid>
                 <main className="justify-content-center">
                     <h1 className="text-center mb-4">
                         <span className="border-bottom rounded pl-3 pr-3 pt-1 pb-1">{currentSection.title}</span>
@@ -40,6 +41,7 @@ function App() {
                     {renderCurrent(currentSection.name)}
                 </main>
             </Container>
+            </div>
 
             <Footer />
         </>
