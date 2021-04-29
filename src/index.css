@@ -41,6 +41,11 @@ h1 {
     width: auto;
 }
 
+.project-img {
+    max-width: 270px;
+    height: auto;
+}
+
 svg {
     fill: currentColor;
 }

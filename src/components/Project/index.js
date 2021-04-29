@@ -2,18 +2,22 @@
 import React from "react";
 
 function Project(props) {
-    const { name, github, deployed } = props;
+    const { num, name, github, deployed } = props;
     return (
-        <article className="card">
-            <div className="card-header">
-                <img
-                    //src={require(`../../assets/small/${category}/${i}.jpg`).default}
-                    alt={name}
-                    //onClick={() => toggleDisplay(name)}
-                    key={name}
-                />
+        <article className="card m-1">
+            <div className="card-header h-100">
+                <h6 className="text-white">{name}</h6>
+                <div className="d-flex justify-content-center align-items-center">
+                    <img
+                        key={num}
+                        src={require(`../../assets/img/${num}-bg.png`).default}
+                        alt={name}
+                        className="project-img w-100 h-100"
+                        //onClick={() => toggleDisplay(name)}
+                    />
+                </div>
             </div>
-            <div className="card-footer">
+            <div className="card-footer d-flex justify-content-between">
                 <a href={deployed} target="_blank" rel="noreferrer noopener">Try it Here!</a> {/*link*/}
                 <a href={github} target="_blank" rel="noreferrer noopener">GitHub</a> {/*github*/}
             </div>

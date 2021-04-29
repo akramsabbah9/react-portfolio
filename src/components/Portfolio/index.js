@@ -1,5 +1,8 @@
 /* Portfolio: display project deployment and github links. */
 import React, { useState } from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 import Project from "../Project";
 
 function Portfolio() {
@@ -29,9 +32,9 @@ function Portfolio() {
             description: ""
         },
         {
-            name: "Roshambo",
-            github: "https://github.com/akramsabbah9/roshambo",
-            deployed: "https://roshambo-ucla.herokuapp.com/",
+            name: "Recipe Finder",
+            github: "https://github.com/pmac16/recipe-finder",
+            deployed: "https://pmac16.github.io/recipe-finder/",
             description: ""
         },
         {
@@ -43,11 +46,12 @@ function Portfolio() {
     ]);
 
     return (
-        <div>{/*TODO: flex*/}
+        <div className="d-flex justify-content-center">
             {/* left section: display project cards */}
-            <div className="grid-container">{/*TODO: grid*/}
-                {projects.map(project => (
+            <div className="w-100 d-flex flex-wrap justify-content-around">
+                {projects.map((project, i) => (
                     <Project
+                        num={i}
                         name={project.name}
                         github={project.github}
                         deployed={project.deployed}
