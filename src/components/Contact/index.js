@@ -18,7 +18,7 @@ function ContactForm() {
             else setErrorMessage("");
         }
         else if (!e.target.value.length) {
-            setErrorMessage(`${e.target.name} is required.`);
+            setErrorMessage(`A ${e.target.name} is required to proceed.`);
         }
         else {
             setErrorMessage("");
@@ -31,26 +31,28 @@ function ContactForm() {
     }
 
     return (
-        <form id="contact-form" onSubmit={handleSubmit}>
-            <div>
-                <label htmlFor="name">Name:</label>
-                <input type="text" name="name" defaultValue={name} onChange={handleChange} onBlur={handleBlur} />
-            </div>
-            <div>
-                <label htmlFor="email">Email Address:</label>
-                <input type="email" name="email" defaultValue={email} onChange={handleChange} onBlur={handleBlur} />
-            </div>
-            <div>
-                <label htmlFor="message">Message:</label>
-                <textarea name="message" rows="5" defaultValue={message} onChange={handleChange} onBlur={handleBlur} />
-            </div>
-            {errorMessage && (
-                <div>
-                    <p className="error-text">{errorMessage}</p>
+        <div className="d-flex justify-content-center">
+            <form id="contact-form" className="w-75" onSubmit={handleSubmit}>
+                <div className="form-group">
+                    <label htmlFor="name" className="d-block h5">Name</label>
+                    <input type="text" name="name" className="form-control form-control-sm" defaultValue={name} onChange={handleChange} onBlur={handleBlur} />
                 </div>
-            )}
-            <button type="submit">Submit</button>
-        </form>
+                <div className="form-group">
+                    <label htmlFor="email" className="d-block h5">Email Address</label>
+                    <input type="email" name="email" className="form-control form-control-sm" defaultValue={email} onChange={handleChange} onBlur={handleBlur} />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="message" className="d-block h5">Message</label>
+                    <textarea name="message" rows="4" className="form-control form-control-sm" defaultValue={message} onChange={handleChange} onBlur={handleBlur} />
+                </div>
+                {errorMessage && (
+                    <div>
+                        <p className="text-danger">{errorMessage}</p>
+                    </div>
+                )}
+                <button type="submit" class="btn btn-secondary pt-2 pb-2">Submit</button>
+            </form>
+        </div>
     );
 }
 
