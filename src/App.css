@@ -36,3 +36,23 @@
         transform: rotate(360deg);
     }
 }
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+.skill-header {
+    text-align: center;
+}
+
+.skill-list {
+    border: 1px solid gray;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(223, 215, 215);
+    background-image: linear-gradient(to right bottom, rgb(165, 168, 198), rgba(0, 0, 0, 0.5));
+}
