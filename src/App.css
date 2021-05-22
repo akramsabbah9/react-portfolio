@@ -37,6 +37,12 @@
     }
 }
 
+@import url("https://fonts.googleapis.com/css?family=Newsreader");
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Newsreader", sans-serif;
+}
+
 ul {
     list-style-type: none;
     padding-inline-start: 0px;
