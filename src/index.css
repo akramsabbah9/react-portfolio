@@ -37,8 +37,18 @@ h1 {
 
 .my-img {
     /* max-height: 386px; */
-    max-height: 53.7vh;
-    width: auto;
+    max-width: 300px;
+    height: auto;
+    align-self: flex-start;
+}
+
+/* on phone, make smaller */
+@media screen and (max-width: 575px) {
+    .my-img {
+        max-width: 200px;
+        width: auto;
+        height: auto;
+    }
 }
 
 .project-img {

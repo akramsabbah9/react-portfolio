@@ -3,16 +3,17 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
+import me from "../../assets/img/me.jpg";
 
 function About() {
     return (
         <Row className="load-anim-1">
             <Col className="d-flex justify-content-center" md="6">
                 <Image
-                    src={require("../../assets/img/me.jpg").default}
+                    src={me}
                     className="mt-3 mb-2 my-img"
                     alt="Akram Sabbah"
-                    rounded fluid
+                    rounded
                 />
             </Col>
             <Col md>
