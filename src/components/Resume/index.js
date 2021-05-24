@@ -12,11 +12,11 @@ function Resume() {
 
     return (
         <>
-            <div className="text-center">
+            <div className="text-center load-anim-1">
                 <p>View my resume <a href={MyResume} target="_blank" rel="noreferrer noopener">here</a>.</p>
             </div>
 
-            <Row>
+            <Row className="load-anim-1">
                 <Col className="d-flex justify-content-center" xs>
                 <div>
                 <h2 className="h3 skill-header">Front-End Skills</h2>

@@ -1,7 +1,5 @@
 /* Portfolio: display project deployment and github links. */
 import React, { useState } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
 // import Col from "react-bootstrap/Col";
 import Project from "../Project";
 
@@ -59,7 +57,7 @@ function Portfolio() {
     ]);
 
     return (
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center load-anim-1">
             {/* left section: display project cards */}
             <div className="w-100 d-flex flex-wrap justify-content-around">
                 {projects.map((project, i) => (

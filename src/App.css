@@ -37,6 +37,29 @@
     }
 }
 
+@keyframes fade-in {
+    from { 
+        transform: translateY(2em);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0em);
+        opacity: 1;
+    }
+}
+
+.load-anim-0 {
+    animation-name: fade-in;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+}
+
+.load-anim-1 {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Newsreader");
 
 h1, h2, h3, h4, h5, h6 {

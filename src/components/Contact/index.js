@@ -31,7 +31,7 @@ function ContactForm() {
     }
 
     return (
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center load-anim-1">
             <form id="contact-form" className="w-75" onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="name" className="d-block h5">Name</label>

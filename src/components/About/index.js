@@ -6,7 +6,7 @@ import Image from "react-bootstrap/Image";
 
 function About() {
     return (
-        <Row>
+        <Row className="load-anim-1">
             <Col className="d-flex justify-content-center" md="6">
                 <Image
                     src={require("../../assets/img/me.jpg").default}
