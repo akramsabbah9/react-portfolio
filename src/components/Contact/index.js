@@ -71,7 +71,7 @@ function ContactForm() {
 
     return (
         <div className="d-flex justify-content-center load-anim-1">
-            <p>env var {process.env.REACT_APP_USER_ID}</p>
+            <p>env var {process.env.REACT_APP_USER_ID} {process.env.REACT_APP_SERVICE_ID}</p>
             {/* if message sent successfully, load success message */}
             {successMessage ? <p>{successMessage}</p> :
                 <form id="contact-form" className="w-75" onSubmit={handleSubmit}>
