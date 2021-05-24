@@ -62,7 +62,7 @@ function Portfolio() {
             <div className="w-100 d-flex flex-wrap justify-content-around">
                 {projects.map((project, i) => (
                     <Project
-                        num={i}
+                        key={i}
                         imgUrl={project.img}
                         name={project.name}
                         github={project.github}

@@ -50,7 +50,7 @@ function ContactForm() {
                         <p className="text-danger">{errorMessage}</p>
                     </div>
                 )}
-                <button type="submit" class="btn btn-secondary pt-2 pb-2">Submit</button>
+                <button type="submit" className="btn btn-secondary pt-2 pb-2">Submit</button>
             </form>
         </div>
     );

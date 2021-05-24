@@ -2,14 +2,14 @@
 import React from "react";
 
 function Project(props) {
-    const { num, imgUrl, name, github, deployed } = props;
+    const { imgUrl, name, github, deployed } = props;
     return (
         <article className="card m-2">
             <div className="card-header h-100">
                 <h6 className="card-title text-white">{name}</h6>
                 <div className="d-flex justify-content-center align-items-center">
                     <img
-                        key={num}
+                        // key={num}
                         src={require(`../../assets/img/${imgUrl}`).default}
                         alt={name}
                         className="project-img w-100 h-100"
