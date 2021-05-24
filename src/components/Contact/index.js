@@ -54,10 +54,10 @@ function ContactForm() {
         
         // service id, template id, e.target, user id
         const result = await emailjs.sendForm(
-            process.env.SERVICE_ID,
-            process.env.TEMPLATE_ID,
+            process.env.REACT_APP_SERVICE_ID,
+            process.env.REACT_APP_TEMPLATE_ID,
             e.target,
-            process.env.USER_ID
+            process.env.REACT_APP_USER_ID
         );
 
         console.log(result);
