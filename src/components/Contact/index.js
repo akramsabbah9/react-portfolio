@@ -9,6 +9,8 @@ function ContactForm() {
     const [errorMessage, setErrorMessage] = useState("");
     const { name, email, message } = formState;
 
+    console.log(process.env.REACT_APP_USER_ID);
+
     function handleChange(e) {
         setFormState({ ...formState, [e.target.name]: e.target.value });
     }
@@ -51,10 +53,15 @@ function ContactForm() {
         if (errorMessage) return;
         
         // service id, template id, e.target, user id
-        const result = await emailjs.sendForm();
+        const result = await emailjs.sendForm(
+            process.env.SERVICE_ID,
+            process.env.TEMPLATE_ID,
+            e.target,
+            process.env.USER_ID
+        );
 
-        // console.log(result);
-        if (result) {
+        console.log(result);
+        if (result.status === 200) {
             setSuccess(`Thank you for reaching out, ${formState.name}! I'll get back to you soon.`);
         }
         else {
@@ -64,6 +71,7 @@ function ContactForm() {
 
     return (
         <div className="d-flex justify-content-center load-anim-1">
+            <p>env var {process.env.REACT_APP_USER_ID}</p>
             {/* if message sent successfully, load success message */}
             {successMessage ? <p>{successMessage}</p> :
                 <form id="contact-form" className="w-75" onSubmit={handleSubmit}>
