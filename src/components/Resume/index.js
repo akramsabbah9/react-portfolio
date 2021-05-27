@@ -1,5 +1,6 @@
 /* Resume: link to resume and list coding proficiencies. */
 import React, { useState } from "react";
+import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import MyResume from "../../assets/docs/resume.pdf";
@@ -11,7 +12,7 @@ function Resume() {
     });
 
     return (
-        <>
+        <Container fluid>
             <div className="text-center load-anim-1">
                 <p>View my resume <a href={MyResume} target="_blank" rel="noreferrer noopener">here</a>.</p>
             </div>
@@ -35,7 +36,7 @@ function Resume() {
                 </div>
                 </Col>
             </Row>
-        </>
+        </Container>
     );
 }
 

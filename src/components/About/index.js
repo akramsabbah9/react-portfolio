@@ -1,5 +1,6 @@
 /* About: an "about me" section featuring picture and bio */
 import React from "react";
+import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
@@ -7,6 +8,7 @@ import me from "../../assets/img/me.jpg";
 
 function About() {
     return (
+        <Container fluid>
         <Row className="load-anim-1">
             <Col className="d-flex justify-content-center" md="6">
                 <Image
@@ -26,6 +28,7 @@ function About() {
                 </p>
             </Col>
         </Row>
+        </Container>
     );
 }
 
