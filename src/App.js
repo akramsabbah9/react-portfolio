@@ -20,7 +20,7 @@ function App() {
     const renderCurrent = name => {
         return (name === "Portfolio") ? <Portfolio /> :
         (name === "Contact") ? <Contact /> :
-        (name === "Resume") ? <Resume /> : <Resume />;
+        (name === "Resume") ? <Resume /> : <About />;
     };
 
     return (
