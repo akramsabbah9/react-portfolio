@@ -6,7 +6,7 @@ function MNav(props) {
     const {sections = [], current, setCurrent} = props;
 
     return (
-        <Nav className="pt-2 pb-2 justify-content-around text-light col-lg-9 row flex-nowrap">
+        <Nav className="pt-2 pb-2 justify-content-around text-light col-lg-9 flex-nowrap">
             {sections.map(section => (
                 <Nav.Item
                     key={section.name}
