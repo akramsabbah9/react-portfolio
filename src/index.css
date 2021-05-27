@@ -27,6 +27,10 @@ code {
     overflow: visible;
 }
 
+.my-nav {
+    justify-content: space-around;
+}
+
 .nav-item span:hover {
     font-weight: 700;
 }
@@ -49,6 +53,12 @@ h1 {
         width: auto;
         height: auto;
     }
+
+    /* .my-nav { */
+        /* Override padding rules in col-lg-9 */
+        /* padding-left: 0 !important;
+        padding-right: 0 !important; */
+    /* } */
 }
 
 .project-img {
