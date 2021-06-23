@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.425d8910.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.09cbe766.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.09cbe766.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.042c163a.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.042c163a.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.5584d1b8.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.5584d1b8.js.map",
     "static/css/2.41b17330.chunk.css": "/react-portfolio/static/css/2.41b17330.chunk.css",
@@ -26,7 +26,7 @@
     "static/media/github.svg": "/react-portfolio/static/media/github.16a9304e.svg",
     "static/media/linkedin.svg": "/react-portfolio/static/media/linkedin.03f1d164.svg",
     "static/media/me.jpg": "/react-portfolio/static/media/me.309c9866.jpg",
-    "static/media/resume.7707c3b1.pdf": "/react-portfolio/static/media/resume.7707c3b1.pdf",
+    "static/media/resume.adc22b60.pdf": "/react-portfolio/static/media/resume.adc22b60.pdf",
     "static/media/stackoverflow.svg": "/react-portfolio/static/media/stackoverflow.3abd72b6.svg"
   },
   "entrypoints": [
@@ -34,6 +34,6 @@
     "static/css/2.41b17330.chunk.css",
     "static/js/2.10552b11.chunk.js",
     "static/css/main.425d8910.chunk.css",
-    "static/js/main.09cbe766.chunk.js"
+    "static/js/main.042c163a.chunk.js"
   ]
 }
