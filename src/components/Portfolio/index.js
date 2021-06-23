@@ -7,8 +7,8 @@ function Portfolio() {
     const [projects] = useState([
         {
             name: "Parking-Pal",
-            github: "https://github.com/the-glorious-4/parking-pal",
-            deployed: "http://parking-palz.herokuapp.com/",
+            github: "https://github.com/akramsabbah9/parking-pal",
+            deployed: "http://parking-pal2.herokuapp.com/",
             description: "",
             img: "6-bg.png"
         },
