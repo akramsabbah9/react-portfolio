@@ -8,7 +8,7 @@ function Portfolio() {
         {
             name: "Parking-Pal",
             github: "https://github.com/akramsabbah9/parking-pal",
-            deployed: "http://parking-pal2.herokuapp.com/",
+            deployed: "https://parking-pal2.herokuapp.com/",
             description: "Parking-share app where users rent out their parking spaces to other users.",
             tools: "MongoDB, Mongoose, Express, React, Node, GraphQL, Stripe, Sass",
             img: "6-bg.png"
