@@ -25,6 +25,9 @@ function About() {
                     in full-stack web development and embedded systems programming. My passion is creating intuitive 
                     user-friendly applications with an emphasis on mobile-first paradigms. Feel free to contact me 
                     if you have any questions about <span>my portfolio</span> or otherwise.
+
+                    You can reach me through the Contact form on this website, or email me directly 
+                    at <a href="mailto:akramsabbah9@gmail.com" target="_blank" rel="noreferrer noopener">akramsabbah9@gmail.com</a>.
                 </p>
             </Col>
         </Row>
